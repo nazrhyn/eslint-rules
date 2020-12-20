@@ -1,7 +1,7 @@
 module.exports = {
 	extends: [
 		'plugin:jest/recommended',
-		'plugin:jest/style'
+		'plugin:jest/style',
 	],
 	env: {
 		jest: true,
@@ -29,5 +29,5 @@ module.exports = {
 		'jest/prefer-todo': 2,
 		'jest/require-to-throw-message': 2,
 		'jest/valid-title': 2,
-	}
+	},
 };

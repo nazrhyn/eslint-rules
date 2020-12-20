@@ -1,15 +1,15 @@
 module.exports = {
 	parserOptions: {
-		'ecmaVersion': 10, // 2019
+		'ecmaVersion': 11, // 2020
 	},
 	env: {
 		'es6': true,
 	},
 	rules: {
-		'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
+		'arrow-parens': [2, 'as-needed'],
 		'arrow-spacing': 2,
 		'class-methods-use-this': 1,
-		'computed-property-spacing': [2, 'never', { enforceForClassMembers: true }],
+		'computed-property-spacing': [2, 'never'],
 		'consistent-this': [2, 'self'],
 		'default-param-last': 2,
 		'generator-star-spacing': [2, { before: false, after: true }],
@@ -18,7 +18,10 @@ module.exports = {
 		'no-buffer-constructor': 2,
 		'no-confusing-arrow': 2,
 		'no-duplicate-imports': [2, { includeExports: true }],
+		'no-nonoctal-decimal-escape': 2,
+		'no-promise-executor-return': 2,
 		'no-template-curly-in-string': 2,
+		'no-unsafe-optional-chaining': 2,
 		'no-useless-computed-key': 2,
 		'no-useless-constructor': 2,
 		'no-useless-rename': 2,
