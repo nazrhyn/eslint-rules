@@ -1,9 +1,9 @@
 module.exports = {
 	parserOptions: {
-		'ecmaVersion': 11, // 2020
+		ecmaVersion: 11, // 2020
 	},
 	env: {
-		'es6': true,
+		es6: true,
 	},
 	rules: {
 		'arrow-parens': [2, 'as-needed'],
