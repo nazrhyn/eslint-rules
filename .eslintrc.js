@@ -6,16 +6,18 @@ module.exports = {
 	},
 	plugins: [
 		'node',
-		'jest',
+		'jsdoc',
 	],
 	extends: [
 		'eslint:recommended',
-		'.eslintrc-base.js',
-		'.eslintrc-es6plus.js',
+		'.eslintrc-base.cjs',
+		'.eslintrc-es6plus.cjs',
 		'plugin:node/recommended',
-		'.eslintrc-node.js',
+		'.eslintrc-node.cjs',
+		'plugin:jsdoc/recommended',
+		'.eslintrc-jsdoc.cjs',
 	],
 	env: {
-		'node': true,
+		node: true,
 	},
 };

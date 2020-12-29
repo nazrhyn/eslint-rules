@@ -95,7 +95,6 @@ module.exports = {
 		'quote-props': [2, 'consistent'],
 		'quotes': [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
 		'radix': 2,
-		'require-jsdoc': [2, { require: { ClassDeclaration: true, MethodDefinition: true } }],
 		'semi': 2,
 		'semi-spacing': 2,
 		'semi-style': 2,
@@ -108,23 +107,6 @@ module.exports = {
 		'spaced-comment': [2, 'always', { block: { balanced: true }, line: { exceptions: ['/'] } }],
 		'switch-colon-spacing': 2,
 		'use-isnan': [2, { enforceForIndexOf: true }],
-		'valid-jsdoc': [
-			2,
-			{
-				matchDescription: '\\.$',
-				preferType: {
-					function: 'Function',
-					boolean: 'Boolean',
-					number: 'Number',
-					integer: 'Number',
-					int: 'Number',
-					string: 'String',
-					object: 'Object'
-				},
-				requireParamType: true,
-				requireReturn: false
-			}
-		],
 		'wrap-iife': [2, 'inside', { functionPrototypeMethods: true }],
 		'yoda': 2,
 	}

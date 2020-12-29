@@ -17,5 +17,9 @@ These rules are configured to be used with the following versions.
 | `.eslintrc.js` | The root file which includes other modular files. |
 | `.eslintrc-base.js` | Includes all rules that don't relate to ES6+ language features. |
 | `.eslintrc-es6plus.js` | Includes all rules that relate to ES6+ language features. |
-| `.eslintrc-node.js` | Includes rules from [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) removed from ESLint core in [v7.0.0](https://eslint.org/blog/2020/05/eslint-v7.0.0-released).
+| `.eslintrc-node.js` | Includes rules from [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) removed from ESLint core in [v7.0.0](https://eslint.org/blog/2020/05/eslint-v7.0.0-released). |
+| `.eslintrc-jsdoc.js` | Includes rules from [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc) replacing the `require-jsdoc` and `valid-jsdoc` rules deprecated in ESLint core in [v5.10.0](https://eslint.org/blog/2018/12/eslint-v5.10.0-released). |
 | `test/.eslintrc.js` | Rules for test files, including Jest-specific rules. |
+
+# ECMAScript Modules
+For now, ESLint does not support ES Modules. If your project uses ES Modules, these files will need to be renamed from `*.js` to `*.cjs` so that they still operate in CommonJS style within an ES Modules project. However, `parserOptions.sourceType` will still need to be set to `'module'` so that the linter allows `import` and `export` statements.
